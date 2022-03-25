@@ -32,6 +32,8 @@ this is a project that allow the user to add some information about his favourit
 **To get a local copy up and running follow these simple steps.**
 - you can clone this repo by typing `git clone git@github.com:omar25ahmed/bookstore`.
 - type `cd bookstore` to access the project on terminal.
+- run `npm install && npm start` on the terminal to open the local server for the project
+- To see the code open the project in the code editor of your preference.
 
 ## Authors
 
@@ -56,4 +58,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./License) licensed.
