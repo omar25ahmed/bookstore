@@ -1,25 +1,23 @@
 import React from 'react';
-import {
-  BrowserRouter as Router, Routes, Route, Link,
-} from 'react-router-dom';
-import Books from './Pages/Books/Books';
-import Categories from './Pages/Categories/Categories';
+import { Routes, Route, Outlet } from 'react-router-dom';
 import './App.css';
+import Books from './components/Books';
+import Categories from './components/Categories';
 
-const App = () => (
-  <Router>
-    <nav>
-      <div className="nav-el">
-        <h1>Bookstore CMS</h1>
-        <Link to="/">Books</Link>
-        <Link to="/Categories">Categories</Link>
-      </div>
-    </nav>
-    <Routes>
-      <Route path="/" element={<Books />} />
-      <Route path="Categories" element={<Categories />} />
-    </Routes>
-  </Router>
-);
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
-export default App;
+  render() {
+    return (
+      <Routes>
+        <Route path="/" element={<Outlet />}>
+          <Route index element={<Books />} />
+          <Route path="categories" element={<Categories />} />
+        </Route>
+      </Routes>
+    );
+  }
+}
