@@ -1,33 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@2,100&display=swap');
-
-nav {
-  background-color: #fff;
-  border-bottom: 1px solid grey;
+body {
+  font-family: sans-serif;
+  background-color: #fafafa;
 }
 
-.nav-el {
-  width: 80%;
+header {
+  background-color: #fff;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  margin-left: 10%;
+  box-shadow: 1px 0.5px 1px #000;
 }
 
-.nav-el h1 {
-  color: #0290ff;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 1000;
+h1 {
+  margin: 0;
+  padding: 1rem;
 }
 
-.nav-el a {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.813rem;
-  letter-spacing: 1.9px;
-  text-decoration-line: none;
+.navbar {
+  margin-left: 1rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  margin-left: 1rem;
+  padding: 1rem;
+}
+
+.book-container {
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  margin: 2.375rem 7.14% 0.938rem 7.14%;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  height: 10.625rem;
+}
+
+.book-info {
+  margin-left: 1.688rem;
+}
+
+.book-genre {
   color: #121212;
-  padding-left: 5%;
+  font-size: 0.875rem;
+  opacity: 50%;
 }
 
-.nav-el a:nth-child(3) {
-  opacity: 0.5;
+.book-title {
+  color: #121212;
+  font-size: 1.375rem;
+}
+
+.book-author {
+  color: #4386bf;
+  font-size: 0.875rem;
+}
+
+.remove-btn {
+  margin-left: 2rem;
+}
+
+h2 {
+  margin: 2.375rem 7.14% 0.938rem 7.14%;
+}
+
+form {
+  margin: 2.375rem 7.14% 0.938rem 7.14%;
 }
