@@ -1,8 +1,14 @@
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 import Book from './Book';
+import { getBooks } from '../redux/books/Books';
 
 const BookList = () => {
   const bookStore = useSelector((state) => state.booksReducer);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getBooks());
+  }, []);
 
   return (
     <div>
