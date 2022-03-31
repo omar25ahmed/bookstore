@@ -24,7 +24,7 @@ const Form = () => {
       title,
       author,
       genre,
-      id,
+      id: `i-${id}`,
     };
     dispatch(addBook(newBook));
     setTitle('');
