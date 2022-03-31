@@ -28,16 +28,6 @@ const reducer = (state = initialState, action) => {
   }
 };
 
-// export const removeBook = (id) => ({
-//   type: REMOVE_BOOK,
-//   id,
-// });
-
-// export const addBook = (payload) => ({
-//   type: ADD_BOOK,
-//   payload,
-// });
-
 export const addBook = (payload) => async (dispatch) => {
   await fetch(api, {
     method: 'POST',
