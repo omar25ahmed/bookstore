@@ -4,6 +4,7 @@ import BookList from './BookList';
 const Books = () => (
   <div className="books-section">
     <BookList />
+    <div className="line" />
     <Form />
   </div>
 );
