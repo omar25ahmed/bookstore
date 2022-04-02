@@ -32,7 +32,7 @@ h1 {
   padding: 1rem;
 }
 
-.link:nth-child(2){
+.link:nth-child(2) {
   opacity: 0.5;
 }
 
@@ -82,7 +82,7 @@ h1 {
 h2 {
   margin: 2.375rem 7.14% 0.938rem 7.14%;
   font-family: 'Montserrat', sans-serif;
-  color: #888888;
+  color: #888;
   font-size: 1.25rem;
 }
 
@@ -92,6 +92,7 @@ form {
   align-items: center;
   flex-wrap: wrap;
 }
+
 .line {
   margin: 0 auto;
   width: 85%;
