@@ -23,15 +23,23 @@ const Book = ({
           <h3 className="book-title">{title}</h3>
           <p className="book-author">{author}</p>
         </div>
-        <button type="button" onClick={remove} className="remove-btn">Remove</button>
+        <button type="button" className="remove-btn">Comments </button>
+        |
+        <button type="button" onClick={remove} className="remove-btn"> Remove</button>
+        |
+        <button type="button" className="remove-btn">Edit </button>
       </div>
-      <div>
-        <p>Completed</p>
+      <div className="progression-div">
+        <div className="circle" />
+        <div className="progression-percentage">
+          <p className="num">64%</p>
+          <p>Completed</p>
+        </div>
       </div>
-      <div>
-        <p>Current Chapter</p>
-        <p>Chapter (---)</p>
-        <button type="button">Update progress</button>
+      <div className="progression-details">
+        <p className="first">Current Chapter</p>
+        <p className="second">Chapter 17</p>
+        <button className="btn" type="button">Update progress</button>
       </div>
     </div>
   );

@@ -40,7 +40,7 @@ const Form = () => {
           <option value="">Choose Category</option>
           {Categories.map((Category) => (<option key={Category}>{Category}</option>))}
         </select>
-        <input type="submit" />
+        <button className="btn" type="submit">ADD BOOK</button>
       </form>
     </div>
   );
