@@ -6,7 +6,7 @@
 
 this is a project that allow the user to add some information about his favourite Books and the percentage of reading hecould add and remove the book from the list
 ## Live Demo
-[Will be ready when the project is finished](https://omar25ahmed.github.io/Awesome-books-plain-JavaScript-with-objects/)
+[Live Demo Here](https://peaceful-macaron-c64c08.netlify.app/calculator)
 
 
 
